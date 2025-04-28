@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+  padding: 10px;
+}
+.title {
+	color: #464444 ;
+	text-align: center; 
+}
+.rectangle {
+  height: 200;
+  width:200;
+  background-color: #F55500;
+  color:#000000;
+}
+.box{
+  height: 200;
+  width:200;
+  background-color: #08080D;
+  color:#000000;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  padding: 1rem;
+}
+
+.menu li {
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button-container {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  content: '';
+  background-color: white;
+  height: 4px;
+  width: 30px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to left, #f46b45, #eea849);
+   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+}
+
+.footer {
+  height: 200;
+  width:200;
+  background-color: #464444;
+  color:#FFFF;
+}
+
+.square {
+  height: 200;
+  width:200;
+  background-color: #F0E2E7;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height:15%;
+  width:100%;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a:hover {
+    color: #c74242;
+    transition: all ease 0.3s;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width:50%;
+    background-color: #E6D6BB;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>NEWS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <section class="top-nav">
+  <div class="menu-button-container" id="menu-button">
+    <div class="menu-button"></div>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="https://www.art.yale.edu/">Home</a></li>
+    <li><a href="https://www.art.yale.edu/about">About the School</a></li>
+    <li><a href="https://www.art.yale.edu/apply">Apply to the School</a></li>
+    <li><a href="https://www.art.yale.edu/exhibitions">Exhibitions</a></li>
+    <li><a href="https://www.art.yale.edu/publications">Publications</a></li>
+    <li><a href="https://www.art.yale.edu/news">News</a></li>
+    <li><a href="https://www.art.yale.edu/public-events">Public Events</a></li>
+  </ul>
+</section>
+
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+  const menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+</br></br>
+
+
+  <h1 class="title" style="text-align: center;">NEWS</h1>
+
+  <div class="square">
+    <h3><a href="https://admissions.yale.edu/">Events archive</a></h3>
+    <a><p>A continuously maintained archive initiated in the spring of 2021 of event series hosted by the Yale School of Art</a></p>
+    <h3><a href="https://forms.gle/Zco5RVscj9csXibU8">Alums, send us your news! >></a></h3>
+    <a><p>use the form above to send alumni news to the School of Art as we re-envision “School of Art in the World” as part of the new website project</a></p>
+    <h3><a href="https://www.art.yale.edu/newsletters">Newsletter archive >></a></h3>
+    <a><p>Mailchimp emails and announcements sent out by the Yale School of Art’s Communications Office</a></p>
+</a></p>
+
+
+  </div>
+
+  <br>
+
+  <div class="square">
+    <h2>On this page</h2>
+    <h5><a href="https://www.art.yale.edu/news#2023">Current News Items</a></h5>
+    <h5><a href="https://www.art.yale.edu/news#2022">Archived News Items</a></h5>
+
+  </div>
+
+  <div class="box">
+    <h2> kk   </h2>
+</div>
+<p> March 31, 2025</p>
+<p>News from New Haven: March 2025</p>
+<p> Join us this weekend for Open Studios!
+Experience Part I and Part II of the 2025 Painting/Printmaking thesis show, Power Line
+Announcing 63 Audubon, a collaborative community art space & more! </p>
+
+<a href="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NfNH2%20optimize.jpg	" target="_blank">
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NfNH2%20optimize.jpg	" style="border:1px solid black;max-width:100%;" alt="Photo of Byron Bay, one of Australia's best beaches!">
+</a>This issue’s header image by Aylin Alakbarli, Graphic Design MFA ‘25, and David Wonsik Jung, Graphic Design MFA '26.
+
+</br>
+ <div class="box">
+       <h2> kk   </h2>
+
+   </div>
+    <p> February 28, 2025</p>
+<p>News from New Haven: February 2025</p>
+<p>Highlights from Art & Activism talk with Jane Schoenbrun
+Congrats to faculty and alums on recent awards & grants!
+Thesis tours continue into their second year & more!</p>
+    <a href="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/nfnh%20feb%2025%20final%20.jpg" target="_blank">
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/nfnh%20feb%2025%20final%20.jpg	" style="border:1px solid black;max-width:100%;" alt="Photo of Byron Bay, one of Australia's best beaches!">
+</a>
+<a href="https://yaleart.org/Feb2025NFNH"><p>This issue’s header image by Kate Johnson, Graphic Design MFA ‘25.</p></a>
+      
+</br>
+ <div class="box">
+       <h2> kk   </h2>   </div>
+<p>January 29, 2025</p>
+<p>News from New Haven: January 2025</p>
+<p>Join us on Monday for Art & Activism with Jane Schoenbrun, Director of I Saw the TV Glow, & Gregory Crewdson
+Spring 2025 curricular happenings & highlights & more</p>
+
+
+    <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/news%20from%20new%20Haven.gif" alt="news from new Haven" width="400" height="300" />
+<p>This issue’s header image by Hana Jelovšek, Graphic Design MFA ‘26.</p>
+
+<div class="box">
+       <h2> kk   </h2>   </div>
+<p>January 27, 2025</p>
+
+<p>Kite Appointed Spring 2025 Post-Colonial Critic at the Yale School of Art</p>
+
+    <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/Kite_Credit_ThatcherKeats.jpg	" alt="Thatcher Keats" style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/news/kite-appointed-post-colonial-critic"><p>Photo by Thatcher Keats.</p></a>
+
+<div class="box">
+       <h2> kk   </h2>   </div>
+<p>January 13, 2025</p>
+<p>Sarah Oppenheimer Appointed Professor in the Practice</p>
+ <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/N-04008_OPPENHEIMER_16.jpg" alt="	Sarah Oppenheimer. N-04008
+, 2024. Installation view: Atelier Calder, France. 2024. Photo Credit: Serge Hasenböhler." style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/sarah-oppenheimer-appointment"><p>Sarah Oppenheimer. N-04008
+, 2024. Installation view: Atelier Calder, France. 2024. Photo Credit: Serge Hasenböhler.</p></a>
+<div class="box">
+       <h2> kk   </h2>   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+    <div class="rectangle">
+      This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community — graduate students, faculty, staff, and alums — have the ability to add new content and pages, and to edit most of the site’s existing content.  
+      Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+    </div>
+
+ <div class="footer">
+<p> Yale School of Art
+1156 Chapel Street, POB 208339
+New Haven, Connecticut, 06520-8339 </br> </br>
+&copy; 2025 Yale School of Arts
+</p>
+  </div>
+</footer>
+</body>
+</html>
 
