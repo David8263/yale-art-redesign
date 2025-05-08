@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+  padding: 10px;
+}
+.title {
+	color: #464444 ;
+	text-align: center; 
+}
+.rectangle {
+  height: 200;
+  width:200;
+  background-color: #F55500;
+  color:#000000;
+}
+.block{
+  height: 200;
+  width:200;
+  background-color: #D5E8EB;
+  color:#000000;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  padding: 1rem;
+}
+
+.menu li {
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button-container {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  content: '';
+  background-color: white;
+  height: 4px;
+  width: 30px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to left, #f46b45, #eea849);
+   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+}
+
+.footer {
+  height: 200;
+  width:200;
+  background-color: #464444;
+  color:#FFFF;
+}
+.box{
+  height: 20px;
+  width:5;
+  background-color: #08080D;
+
+}
+.square {
+  height: 200;
+  width:200;
+  background-color: #D5E8EB;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height:15%;
+  width:100%;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a:hover {
+    color: #c74242;
+    transition: all ease 0.3s;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width:50%;
+    background-color: #E6D6BB;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  }
+}
+  </style>
+ <meta charset="UTF-8">
+  <title>Apply - Yale School of Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <section class="top-nav">
+  <div class="menu-button-container" id="menu-button">
+    <div class="menu-button"></div>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About the School</a></li>
+    <li><a href="apply.html">Apply to the School</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="events.html">Public Events</a></li>
+  </ul>
+</section>
+
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+  const menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+</br>
+  <html>
+  <body>
+      <h2>Financial Aid & Student Financial Resources</h2>
+<div class="square">
+<p>The Financial Aid process for the Yale School of Art's graduate MFA program functions cyclically with each academic year. Students are responsible for submitting different Financial Aid-related information depending on where they are in the Financial Aid process.</p>
+
+<h5> Find the details and timeline pertaining to your Financial Aid application by clicking the link below that applies to you:</h5>
+
+<li><a href="https://www.art.yale.edu/about/resources/financial-aid/prospective-students">Introductory Step: Prospective Students</a></li>
+<li><a href="https://www.art.yale.edu/about/resources/financial-aid/applicants">Step 1: Applicants </a></li>
+<li><a href="https://www.art.yale.edu/about/resources/financial-aid/accepted/">Step 2: Accepted / Admitted Students </a></li>
+<li><a href="https://www.art.yale.edu/about/resources/financial-aid/committed">Step 3: Committed / Matriculated Students</a></li>
+<li><a href="https://www.art.yale.edu/about/resources/financial-aid/returning">Step 4: Returning Students</a></li>
+</div>
+
+<h2>Types of financial aid: </h2>
+<button type="button" class="collapsible">SCHOLARSHIP</button>
+<div class="content">
+  <p>When the total amount of the student contribution, parent contribution, employment/work-study and loans do not meet a student’s full financial need, scholarship funds are awarded. Scholarships are also known as grant or gift aid and, unlike loans, do not have to be repaid. If your financial aid applications are received and processed by the School’s deadline and you have calculated need, the School makes every effort to award a substantial scholarship to you. Scholarship availability is based on the number of students with calculated financial need within the School and the amount of funds available.
+
+Scholarship is need-based and only awarded to accepted students who’ve applied for aid and have demonstrated need. The maximum scholarship for first-year students does not exceed tuition costs.</p>
+</div>
+<button type="button" class="collapsible">LOANS</button>
+<div class="content">
+  <p>A portion of your financial need will be met with an offer of a unit loan. Your loan offer is composed of loans from either the Federal Direct Loan Programs if you are a U.S. Citizen/Permanent Resident or an alternative/private bank/Yale International Student loan if you do not qualify for the federal loan programs or you are an International Student. You must indicate the type and amount of the loan you would like to borrow, if you choose to borrow, on the Art Loan Request Form 2025-26. </br></br>(Domestic Students) Federal Direct Unsubsidized Loan Program - The Direct Unsubsidized Loan is a federal loan with an annual limit of $20,500. Interest charges accrue during enrollment. Students may borrow an amount up to the cost of attendance minus any financial aid. The fixed interest rate for the current/upcoming academic year for all borrowers is 7.05% with a 1.057% fee. The new rate for beyond October 1st, 2023 has not yet been determined. The cumulative amount of Direct Loans borrowed (undergraduate and graduate) may not exceed $138,500. This loan may be used to replace the student and parent contributions. Interest may be paid monthly, or it may be accrued and added to the principal (capitalized) when the student graduates or the deferment period ends. Repayment will begin six months (grace period) after the student has left school. Following the six-month grace period, loan repayment usually occurs within the ten-year period after graduation, but longer repayment options may be available, not counting approved deferments or loan consolidation. You may repay part or all your loans in advance without penalty. If you are currently in repayment for an undergraduate loan, further repayment may be deferred once you enroll at Yale. It is the student’s responsibility to communicate with the lender or holder of the prior loans to receive a deferment.
+
+</br> </br>(Domestic Students) Federal Direct Graduate PLUS Loan - Credit–worthy Graduate students may borrow a loan in an amount up to the cost of attendance less any other financial aid offered. The terms and conditions include: a requirement that the applicant not have an adverse credit history; a repayment period that begins on the date of the last disbursement of the loan; and a fixed interest rate of 8.05% with a 4.228% fee (for the current/future academic year). The new rate for beyond October 1st, 2023 has not yet been determined. This is a federal loan which can be consolidated with other federal loan programs after graduation.
+
+</br></br> (Domestic Students) Federal Direct Loan Application Process - Yale University participates exclusively in the William D. Ford Federal Direct Loan program. Borrowers will obtain loan funds directly from the U.S. Department of Education. This program offers students a more streamlined, stable and predictable borrowing experience. The financial aid award letter you received includes a detailed breakdown of your loan offer. Your first responsibility is to review that offer carefully and to contact us with any questions you have about any of the listed loan programs. When you have decided to accept or decline our loan offer, please sign and return the Art Loan Form 2025-26. The Yale School of Art Financial Aid Office will electronically set up and certify your Federal Direct loan(s) once we have completed the federal verification process (see Verification of Awards section) and/or have received the items listed on the Financial Aid Verification Checklist. After your loan has been accepted by the Department of Education, you will receive an e-mail directing you to the Student Loans website to complete the online Master Promissory Note (MPN) and Entrance Loan Counseling. You will need your Federal FSA ID number to complete the MPN. If you intend to borrow from both the Direct Unsubsidized Loan and Direct Grad Plus Loan programs, you will need to complete a separate MPN for each loan program.
+
+</br></br> (Domestic Students) For the Direct Grad PLUS Loan a credit check is required. By signing the Loan Notification/ Confirmation Form you are authorizing the U.S. Department of Education (USDE) to investigate your credit record. Instructions for completing the Direct Grad Plus Loan MPN will be emailed to you once your credit has been approved.
+
+</br></br>(Domestic/International Students) Alternative/Private Bank Loans - Alternative/Private bank loans are available to students who do not qualify for the federal programs, cannot cover their full cost of attendance with federal loans, and for International Students. Students need to complete the Art Loan Form 2019-20 and return it to the Financial Aid Office. Yale has identified alternative loan lenders that our students have borrowed from in the recent past and who are providing alternative loans for educational purposes. Review the Yale website on student loans for professional/graduate students for more information. The website has a link to ELMSelect for a comparison of the different lenders that you can evaluate, selecting a lender that best fits your loan needs. Call the Financial Aid Office if you have any questions.
+
+</br></br>(Domestic/International Students) Alternative/Private Bank Loan Application Process - The students must apply for an alternative loan directly from the lenders. The lenders will contact Yale and the two parties will work together to issue your loan funds through the University. You are free to choose any lender and we will process a loan for you from any lender provided you have the unmet need to accommodate your loan request.
+
+</br></br>(International Students) Yale International Student Loan Program - Yale University offers a loan program to full time International Students. The loan is available to students who do not have a U.S. co-signer which prevents them from qualifying for an alternative/bank loan. There is a 5% origination fee. The 2025-2026 interest rate will be announced in the spring; the current fixed rate is 7.75%. The loan will have a 6-month grace period and a 10-year repayment period. Interest accrues during attendance and is capitalized at the end of the grace period. There is no formal application for this loan.
+
+</br> </br>(International Students) Yale International Student Loan Process - The Financial Aid Award letter you received includes a detailed breakdown of your loan offer. Your first responsibility is to review that offer carefully and to contact us with any questions you have about the loan program. When you have decided to accept or decline our loan offer, please sign and return the Self Certification Form and the Loan Notification/Confirmation Form.
+
+</br></br>The Yale School of Art Financial Aid Office will electronically set up and certify your Yale International Student Loan once we have completed the verification process (see Verification of Awards section) and have received your signed Self Certification Form and Loan Notification/Confirmation Form. After your loan has been accepted, you will receive an e-mail directing you to complete the Master Promissory Note (MPN), Disclosure Statement, and Truth in Lending Disclosure online at Yale’s student portal.
+
+</p>
+</div>
+<button type="button" class="collapsible">WORK-STUDY & PART-TIME EMPLOYMENT</button>
+<div class="content">
+  <p>Work-study as part of your financial aid award indicates eligibility for a job within Yale. There are a number of jobs within the School of Art (admissions, labs, studio crews, etc.) that paid $14.25 per hour in 2019-20. If you are awarded a job within the School, you will be notified by the supervisor. Generally, it will involve four-to-six hours a week during the regular academic year only.
+
+Work-study positions available within the School of Art may be limited and not all MFA students necessarily will be assigned a job within the School. So it is suggested you examine the Yale Student Employment Office (246 Church Street) online student job search. This job search engine lists campus, community service (Federal Work Study) and other categories of employment for which you can apply online.</p>
+</div>
+<button type="button" class="collapsible">TEACHING ASSISTANT POSITIONS</button>
+<div class="content">
+  <p><b>(Returning/Second-year students ONLY)</b>
+School of Art faculty select Teaching Assistants each year from the second-year class. Pay is a flat rate for the term and is determined by the class’s number of hours and sections. At the time they are assigned, Teaching Assistantships are not determined through financial need; however, the amount a student earns is considered a term-time earning and may reduce a student’s total need insofar as the financial award is concerned. Teaching Assistants normally receive an appointment for one term.</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</br></br>
+ <div class="box"></div>
+</br>
+<div class="block">
+  <h2>Questions? Please Contact Us.</h2>
+     Email the Director of Financial Aid, Nicole Archer at <a href="mailto:nicole.archer@yale.edu">nicole.archer@yale.edu </a>, with any questions
+ </div>
+</br>
+  <footer>
+    <div class="rectangle">
+      This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community — graduate students, faculty, staff, and alums — have the ability to add new content and pages, and to edit most of the site’s existing content.  
+      Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+    </div>
+
+ <div class="footer">
+<p> Yale School of Art
+1156 Chapel Street, POB 208339
+New Haven, Connecticut, 06520-8339 </br> </br>
+&copy; 2025 Yale School of Arts
+</p>
+  </div>
+</footer>
+</body>
+</html>

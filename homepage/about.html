@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* all of the code found below, labeled menu and li, are borrowed from Tracey's code */
+            .top-nav {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(to left, #f46b45, #eea849);
+                padding: 1rem;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: #00BAF0;
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #FFF;
+                height:15%;
+                width:100%;
+            }
+            .menu > li {
+            margin: 0 1rem;
+            overflow: hidden;
+            }
+            .menu-button-container {
+            display: none;
+            height: 100%;
+            width: 50px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            .menu-button, .menu-button::before, .menu-button::after {
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                height: 4px;
+                width: 30px;
+                transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                border-radius: 2px;
+                content: '';
+                margin: 4px 0;
+                transition: 0.3s;
+            }
+            .menu-button::before {
+                content: '';
+                margin-top: -8px;
+            }
+            .menu-button::after {
+                content: '';
+                margin-top: 8px;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu li {
+                margin: 0 1rem;
+                justify-content: space-between;
+            }
+            .menu a {
+                color: white;
+                text-decoration: none;
+            }
+            .menu-button-container {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+            }
+            li a:hover {
+                color: #c74242;
+                transition: all ease 0.3s;
+            }
+            /* all of the css code found below inside the @media are borrowed from Tracey's code */
+            @media (max-width: 700px) {
+                .menu {
+                display: none;
+                flex-direction: column;
+                width:50%;
+                background-color: #E6D6BB;
+
+                list-style: none;
+                margin: 0;
+                padding: 0; 
+                }
+
+                .menu-button-container {
+                display: flex;
+                }
+
+                .menu.show {
+                display: flex;
+                }
+
+                .menu.show {
+                    display: flex;
+                }
+
+                .menu-button-container {
+                    display: flex;
+                }
+            }
+            /* footer code copied from Tracey's code */
+            .footer{
+                height: 200;
+                width:200;
+                background-color: #464444;
+                color:#FFFF;
+            }
+            h1 {
+                text-align: center;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+                margin-left: 5em;
+                margin-right: 5em;
+            }
+            .center-box {
+                margin-left: 7em;
+                margin-right: 7em;
+                grid-column: 1 / span 2;
+            }
+            .grid-item {
+                background: #f0e2e7; /* color base on the color found in Tracey's code */
+                outline-style: solid;
+                padding: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navigation bar code used from Tracey's code-->
+        <section class="top-nav">
+            <div class="menu-button-container" id="menu-button">
+              <div class="menu-button"></div>
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About the School</a></li>
+              <li><a href="apply.html">Apply to the School</a></li>
+              <li><a href="exhibitions.html">Exhibitions</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="events.html">Public Events</a></li>
+            </ul>
+        </section>
+        
+        <br>
+        <div class="container">
+            <div class="center-box">
+                <h1 style="font-size: 4em">About The School</h1>
+            </div>
+            <div class="grid-item center-box">
+                <p>
+                    The Yale School of Art is a graduate school that confers Master of Fine Arts Degrees in Graphic Design, 
+                    Painting/Printmaking, Photography, and Sculpture
+                </p>
+                <p>
+                    Artists and designers of unusual promise and strong motivation are provided an educational context in which 
+                    they can explore the potential of their own talents in the midst of an intense critical dialogue. This dialogue 
+                    is generated by their peers, by distinguished visitors, and by a faculty comprised of professional artists of 
+                    acknowledged accomplishment.
+                </p>
+                <p>
+                    The graduate student’s primary educational experience at Yale is centered on the student’s own studio activity. 
+                    Supporting this enterprise are the experience, knowledge, and skills gained from rigorous, structured courses such as 
+                    drawing, filmmaking, the relativity of color, and the rich academic offerings found throughout Yale. Each student 
+                    is routinely exposed to many aesthetic positions through encounters with faculty members and visitors. The School 
+                    is devoted not only to the refinement of visual skills, but also to the cultivation of the mind. Students must 
+                    bring creative force and imagination to their own development, for these qualities cannot be taught—they can only 
+                    be stimulated and appreciated.
+                </p>
+                <p>
+                    The School of Art offers an undergraduate art major for students in Yale College (see the bulletin Yale College Programs of Study). 
+                    In addition, the School’s courses are open to students in the Graduate School of Arts and Sciences and other professional schools 
+                    of the University, and School of Art students may enroll in elective courses in the Graduate School and other professional schools 
+                    as well as in the College with permission.
+                </p>
+            </div>
+            <div class="grid-item">
+                <p><strong>Master of Fine Arts Degree (MFAs)</strong></p>
+                <p>
+                    The degree of Master of Fine Arts is the only degree offered by the School of Art. It is conferred 
+                    by the University upon recommendation of the faculty after successful completion of all course work 
+                    in residence and after a thesis presentation that has been approved by the faculty. It implies 
+                    distinctive achievement on the part of students in studies in the professional area of their choice 
+                    and demonstrated capacity for independent work. The minimum residence requirement is two years. 
+                    All candidates’ work is reviewed by faculty at the end of each term. If the work is not considered 
+                    satisfactory, the student may not be invited back to complete the program (see section on Review 
+                    and Awards under Academic Regulations in the chapter General Information). All degree candidates are 
+                    expected to be present at the Commencement exercises in May unless excused by the dean.
+                </p>
+                <p>
+                    Course work for the Master of Fine Arts degree carries a minimum of sixty credits. The disposition of 
+                    these credits varies according to the area of study and is agreed upon at the time of registration between 
+                    the student and the student’s faculty adviser.
+                </p>
+            </div>
+            <div class="grid-item">
+                <p><strong>Public Lectures and Exhibitions</strong></p>
+                <p>
+                    Each department has its own visitor program in which professionals from outside the School are invited to 
+                    lecture to students or take part in critiques. 
+                </p>
+                <p>
+                    The School also facilitates a public all-school lecture program in which ideas of general and cross-disciplinary 
+                    importance are explored by visiting artists and members of the faculty in events typically hosted in the evening 
+                    that are free and open to the public.
+                </p>
+                <p>
+                    The School of Art’s galleries in Green Hall and at 32 Edgewood Avenue provide a year-round forum for the exhibition 
+                    of work by students, faculty, and special guests in the four graduate departments of the School and the undergraduate 
+                    program. Green Gallery is open to the public when exhibitions are scheduled, but open hours vary by semester. The 32 
+                    Edgewood Gallery is open during limited hours for specific exhibitions and events. Please refer to the Gallery & Publications 
+                    page for more information.
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <!-- Code copied from Tracey's page-->
+        <p class="footer"> 
+            Yale School of Art
+            1156 Chapel Street, POB 208339
+            New Haven, Connecticut, 06520-8339</br></br>
+            &copy; 2025 Yale School of Arts
+        </p>
+    </body>
+</html>
