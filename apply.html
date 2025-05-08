@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+  padding: 10px;
+}
+.title {
+	color: #464444 ;
+	text-align: center; 
+}
+.rectangle {
+  height: 200;
+  width:200;
+  background-color: #F55500;
+  color:#000000;
+}
+
+.footer {
+  height: 200;
+  width:200;
+  background-color: #464444;
+  color:#FFFF;
+}
+
+.square {
+  height: 200;
+  width:200;
+  background-color: #F0E2E7;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+  /* all of the code found below, labeled menu and li, are borrowed from Tracey's code */
+  .top-nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height:15%;
+  width:100%;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  content: '';
+  margin: 4px 0;
+  transition: 0.3s;
+}
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu-button-container {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+li a:hover {
+  color: #c74242;
+  transition: all ease 0.3s;
+}
+/* all of the css code found below inside the @media are borrowed from Tracey's code */
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width:50%;
+    background-color: #E6D6BB;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>Apply - Yale School of Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="top-nav">
+    <div class="menu-button-container" id="menu-button">
+      <div class="menu-button"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About the School</a></li>
+      <li><a href="apply.html">Apply to the School</a></li>
+      <li><a href="exhibitions.html">Exhibitions</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="events.html">Public Events</a></li>
+    </ul>
+  </section>
+
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+  const menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+</br></br>
+
+
+  <h1 class="title" style="text-align: center;">Apply To The School</h1>
+
+  <div class="square">
+    <h3>The Yale School of Art is a graduate school that confers Master of Fine Arts Degrees in Graphic Design, Painting/Printmaking, Photography, and Sculpture</h3>
+    <p>For information on applications to the MFA program, please click the <i>Graduate Admission</i> link below.
+    The undergraduate admissions process is handled entirely through <a href="https://admissions.yale.edu/">Yale College</a>. Please refer all undergraduate admissions questions to the <a href="https://admissions.yale.edu/contact-us">Yale College Undergraduate Admissions Office.</a></p>
+
+    <p>The application for Fall 2025 Admission to Yale MFA program has closed for the year. The application for Fall 2026 will open in October 2025.</p>
+  </div>
+
+  <br>
+
+  <iframe width="575" height="375" src="https://www.youtube.com/embed/smn0Rx65Lzc?list=PLsItDf44yBTGMwlXccUqx-J_s7ZxeORMm" title="2023 Open House: Dean's Welcome, Admissions, & Financial Aid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div class="square">
+    <h2>More Links</h2>
+    <h5><a href="https://www.art.yale.edu/apply/graduate-admission">Graduate Admission</a></h5>
+    <h5><a href="Financial Aid.html">Tuition, Fees, & Financing Your Education</a></h5>
+    <h5><a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas">Graduate Study Areas</a></h5>
+    <h5><a href="course.html">Courses</a></h5>
+    <h5><a href="https://www.art.yale.edu/brochures-and-documentation">Brochures and Documentation</a></h5>
+  </div>
+
+  <footer>
+    <div class="rectangle">
+      This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community — graduate students, faculty, staff, and alums — have the ability to add new content and pages, and to edit most of the site’s existing content.  
+      Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+    </div>
+
+ <div class="footer">
+<p> Yale School of Art
+1156 Chapel Street, POB 208339
+New Haven, Connecticut, 06520-8339 </br> </br>
+&copy; 2025 Yale School of Arts
+</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+  padding: 10px;
+}
+.title {
+	color: #464444 ;
+	text-align: center; 
+}
+.rectangle {
+  height: 200;
+  width:200;
+  background-color: #F55500;
+  color:#000000;
+}
+
+.footer {
+  height: 200;
+  width:200;
+  background-color: #464444;
+  color:#FFFF;
+}
+
+.square {
+  height: 200;
+  width:200;
+  background-color: #F0E2E7;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+  /* all of the code found below, labeled menu and li, are borrowed from Tracey's code */
+  .top-nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height:15%;
+  width:100%;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  content: '';
+  margin: 4px 0;
+  transition: 0.3s;
+}
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu-button-container {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+li a:hover {
+  color: #c74242;
+  transition: all ease 0.3s;
+}
+/* all of the css code found below inside the @media are borrowed from Tracey's code */
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width:50%;
+    background-color: #E6D6BB;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>NEWS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <section class="top-nav">
+  <div class="menu-button-container" id="menu-button">
+    <div class="menu-button"></div>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About the School</a></li>
+    <li><a href="apply.html">Apply to the School</a></li>
+    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="events.html">Public Events</a></li>
+  </ul>
+</section>
+
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+  const menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+</br></br>
+
+
+  <h1 class="title" style="text-align: center;">NEWS</h1>
+
+  <div class="square">
+    <h3><a href="https://admissions.yale.edu/">Events archive</a></h3>
+    <a><p>A continuously maintained archive initiated in the spring of 2021 of event series hosted by the Yale School of Art</a></p>
+    <h3><a href="https://forms.gle/Zco5RVscj9csXibU8">Alums, send us your news! >></a></h3>
+    <a><p>use the form above to send alumni news to the School of Art as we re-envision “School of Art in the World” as part of the new website project</a></p>
+    <h3><a href="https://www.art.yale.edu/newsletters">Newsletter archive >></a></h3>
+    <a><p>Mailchimp emails and announcements sent out by the Yale School of Art’s Communications Office</a></p>
+</a></p>
+
+
+  </div>
+
+  <br>
+
+  <div class="square">
+    <h2>On this page</h2>
+    <h5><a href="https://www.art.yale.edu/news#2023">Current News Items</a></h5>
+    <h5><a href="https://www.art.yale.edu/news#2022">Archived News Items</a></h5>
+
+  </div>
+
+  <div class="box">
+</div>
+<h2> March 31, 2025</h2>
+<h3>News from New Haven: March 2025</h3>
+<p> Join us this weekend for Open Studios!
+Experience Part I and Part II of the 2025 Painting/Printmaking thesis show, Power Line
+Announcing 63 Audubon, a collaborative community art space & more! </p>
+
+<a href="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NfNH2%20optimize.jpg	" target="_blank">
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NfNH2%20optimize.jpg	" style="border:1px solid black;max-width:100%;" alt="Photo of Byron Bay, one of Australia's best beaches!">
+</a>This issue’s header image by Aylin Alakbarli, Graphic Design MFA ‘25, and David Wonsik Jung, Graphic Design MFA '26.
+
+</br>
+ <div class="box">
+   </div>
+    <h2> February 28, 2025</h2>
+<h3>News from New Haven: February 2025</h3>
+<p>Highlights from Art & Activism talk with Jane Schoenbrun
+Congrats to faculty and alums on recent awards & grants!
+Thesis tours continue into their second year & more!</p>
+    <a href="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/nfnh%20feb%2025%20final%20.jpg" target="_blank">
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/nfnh%20feb%2025%20final%20.jpg	" style="border:1px solid black;max-width:100%;" alt="Photo of Byron Bay, one of Australia's best beaches!">
+</a>
+<p>This issue’s header image by Kate Johnson, Graphic Design MFA ‘25.</p>
+<a href="https://yaleart.org/Feb2025NFNH"><p>READ MORE</p></a>
+      
+</br>
+ <div class="box">
+   </div>
+<h2>January 29, 2025</h2>
+<h3>News from New Haven: January 2025</h3>
+<p>Join us on Monday for Art & Activism with Jane Schoenbrun, Director of I Saw the TV Glow, & Gregory Crewdson
+Spring 2025 curricular happenings & highlights & more</p>
+ <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/news%20from%20new%20Haven.gif" alt="news from new Haven" width="400" height="300" />
+<p>This issue’s header image by Hana Jelovšek, Graphic Design MFA ‘26.</p>
+
+<div class="box">
+   </div>
+<h2>January 27, 2025</h2>
+<h3>Kite Appointed Spring 2025 Post-Colonial Critic at the Yale School of Art</h3>
+  <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/Kite_Credit_ThatcherKeats.jpg" alt="Thatcher Keats" style="border:1px solid black;max-width:100%;"/>
+  <p><p>Photo by Thatcher Keats.</p></p>
+<a href="https://www.art.yale.edu/news/kite-appointed-post-colonial-critic"><p>READ MORE</p></a>
+
+<div class="box">
+   </div>
+<h2>January 13, 2025</h2>
+<h3>Sarah Oppenheimer Appointed Professor in the Practice</h3>
+ <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/N-04008_OPPENHEIMER_16.jpg" alt="	Sarah Oppenheimer. N-04008
+, 2024. Installation view: Atelier Calder, France. 2024. Photo Credit: Serge Hasenböhler." style="border:1px solid black;max-width:100%;"/>
+<p> Sarah Oppenheimer. N-04008, 2024. Installation view: Atelier Calder, France. 2024. Photo Credit: Serge Hasenböhler.</p>
+<a href="https://www.art.yale.edu/sarah-oppenheimer-appointment"><p>READ MORE</p></a>
+
+<div class="box">
+  </div>
+   <h2> December 19, 2024</h2>
+<h3>News From New Haven: December 2024</h3>
+<p>Interdepartmental & collaborative events this fall
+Updates from Yale Alumni Association delegate Experience the Fall Undergraduate Exhibition & more!</p>
+ <img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/Dec_NFNH.jpg" alt="NFNH '24"style="border:1px solid black;max-width:100%;"/> 
+ <p>This issue’s header image by Fatima Al-Kuwari, Graphic Design MFA ‘25.</p>
+<a href="https://yaleart.org/Dec2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>December 6, 2024</h2>
+<h3>Yale School of Art Seeks Senior Administrative Assistant for Dean’s Office</h3>
+<a href="https://www.art.yale.edu/news/deans-office-senior-admin-posting"><p>READ MORE</p></a>
+<a href="https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25053&siteid=5248&PageType=JobDetails&jobid=1593458"><p>APPLY HERE >></p></a>
+
+<div class="box">
+ </div>
+<h2>November 26, 2024</h2>
+<h3>News from New Haven: November 2024</h3>
+<p>Highlights from recent public events! Alumni Advisory Council hosts inaugural meeting Experience the 2nd-Year MFA Exhibition & more!</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/nfnh_nov24%20Jeewon%20Kim.jpg" alt="Jeewon Kim MFA ‘25"style="border:1px solid black;max-width:100%;"/>
+<p><p>This issue’s header image by Jeewon Kim, Graphic Design MFA ‘25.</p></p>
+<a href="https://yaleart.org/Nov2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>November 25, 2024</h2>
+<h3>Announcing the new Galleries & Exhibitions Manager and changes to Dean’s Office roles</h3>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/ben%20and%20annie%20headshots.jpg" alt="Jeewon Kim MFA ‘25"style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/news/gem-deans-office-roles"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>October 31, 2024</h2>
+<h3>News from New Haven: October 2024</h3>
+<p>Join us in New Haven this week & next! Dean Pinder’s month with strong women alums Welcoming Shahzia Sikander to campus & more</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/final%20coco%20shiya%20yuan.jpg" alt="Coco Shiya Yuan"style="border:1px solid black;max-width:100%;"/>
+<p>This issue’s header image by Coco Shiya Yuan, Graphic Design MFA ‘25.</p>
+<a href="https://yaleart.org/Oct2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>September 30, 2024</h2>
+<h3>News from New Haven: September 2024</h3>
+<p>Fall 2024 curricular happenings & highlights
+Distinguished Lecture Series continues with Shahzia Sikander
+Highlights from summer programs abroad: Paul Mellon, Pasanella, and Mahler & LeWitt Studios & more</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NFN_INS_ORIGINAL.jpg	" alt="Xing Zhang '27"style="border:1px solid black;max-width:100%;"/>
+<p>This issue’s header image by Xing Zhang, Graphic Design MFA ‘27.</p>
+<a href="https://yaleart.org/Sept2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>September 27, 2024</h2>
+<h3>Sam Contis appointed full-time faculty member in Photography</h3>
+<p>Highlights from recent public events! Alumni Advisory Council hosts inaugural meeting Experience the 2nd-Year MFA Exhibition & more!</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/02_contis-cda-install-2.jpg" alt="Transit, Carré d'Art"style="border:1px solid black;max-width:100%;"/>
+<p>Sam Contis: Transit, Carré d'Art, Nîmes, France, 2022, Installation view, 2022. Image courtesy of the artist.</p>
+<a href="https://www.art.yale.edu/news/fall-2024-sam-contis-full-time-faculty-appointment"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>September 20, 2024</h2>
+<h3>Welcome to our 2024 Photography Teaching Fellow</h3>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/Shelli-Weiler_Anonymous-Star.jpg" alt="Jeewon Kim MFA ‘25"style="border:1px solid black;max-width:100%;"/>
+<p>Shelli Weiler, Photography MFA ‘24, Anonymous Star. Courtesy of the artist.</p>
+<a href="https://www.art.yale.edu/news/2024-photography-fellow"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>September 17, 2024</h2>
+<h3>Yale & the City of New Haven partner on historic mural at the Goffe Street Armory to make Climate Action more inclusive</h3>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/Apprenticeship_Announcement_gif.jpg	" alt="091724"style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/news/yale-and-city-of-new-haven-mural-goffe-street-armory-climate-action"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>August 30, 2024</h2>
+<h3>Yale School of Art & NYU Abu Dhabi launch pilot Post-MFA Residency Exchange</h3>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/soa-nyuad-mfa-exchange-image-artworks-2.jpg"style="border:1px solid black;max-width:100%;"/>
+<p>Work by the inaugural SoAxNYUAD Post-MFA Residency Exchange artists. Left: Chinaedu Nwadibia, SoA MFA ‘22. Right: Majd Alloush, NYUAD MFA ‘23.</p>
+<a href="https://www.art.yale.edu/news/soa-nyuad-post-mfa-residency-exchange"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>August 6, 2024</h2>
+<h3>School of Art Seeks Gallery Exhibition Manager</h3>
+<p>Photo by Meghan Olson.</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/for%20gallery%20job%20share__IMG_9113-HDR-40%20meghan%20olson.jpg" alt="080624"style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/news/gallery-exhibitions-manager-posting"><p>READ MORE</p></a>
+<a href="https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25053&siteid=5248&PageType=JobDetails&jobid=1589594#jobDetails=1589594_5248"><p> APPLY NOW>></p></a>
+
+<div class="box">
+ </div>
+<h2>June 28, 2024</h2>
+<h3>News from New Haven: June 2024</h3>
+<p>Celebrating three years of engagement in New Haven through Yale Pathways
+Visiting alumni work in New York City
+Experience the 2024 Undergraduate, Photo MFA, and Graphic Design MFA Thesis Exhibitions & more</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/newsfromnewhaven_june%20(1)%20Aylin%20Alakbarli.jpg	" alt="080624"style="border:1px solid black;max-width:100%;"/>
+<a href="https://yaleart.org/June2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>June 10, 2024</h2>
+<h3>School of Art Seeks Part-Time Fabrication Shop Technician</h3>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/IMG_5211.jpg	" alt="Adam Amram MFA ‘24"style="border:1px solid black;max-width:100%;"/>
+<p>Sae Jun Kim at work in the woodshop at the Yale School of Art. Photo by Adam Amram, Painting/Printmaking MFA ‘24.</p>
+<a href="https://www.art.yale.edu/news/seeking-pt-fabrication-shop-technician"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>May 20, 2024</h2>
+<h3>Congratulations to the Class of 2024!</h3>
+<p>Yale University’s Old Campus commencement exercises, 2023. Photo: Pat Garcia, Photography MFA ‘24.</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/graduation-42.jpg" alt="Grad '24"style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/classof2024"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>May 13, 2024</h2>
+<h3>SoA Seeks Metal Fabrication Shop Manager</h3>
+<p>Highlights from recent public events! Alumni Advisory Council hosts inaugural meeting Experience the 2nd-Year MFA Exhibition & more!</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/DSC03897.jpg	" alt="SOA Metal Fabrication"style="border:1px solid black;max-width:100%;"/>
+<a href="https://www.art.yale.edu/news/metal-shop-posting"><p>READ MORE</p></a>
+<a href="https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25053&siteid=5248&PageType=JobDetails&jobid=1587098"><p>Apply NOW>></p></a>
+
+<div class="box">
+ </div>
+<h2>April 30, 2024</h2>
+<h3>News from New Haven: April 2024</h3>
+<p>Thank you for joining us for 2024 Open Studios!
+Experience the 2024 Sculpture MFA Thesis Exhibition
+Recapping recent All-School & public events & more</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/NFNH%20APR%2024.gif" alt="nfnh '24"style="border:1px solid black;max-width:100%;"/>
+<p>This issue’s header image by Paulina Moncada, Painting/Printmaking MFA ‘25.</p>
+<a href="https://yaleart.org/Mar2024NFNH"><p>READ MORE</p></a>
+
+<div class="box">
+ </div>
+<h2>February 26, 2024</h2>
+<h3>News from New Haven: January 2024</h3>
+<p>Spring 2024 curricular happenings & highlights
+First Spring 2024 MFA thesis exhibition installed & on view
+“Photographic Storytelling" collaborates with Yale Daily News on photo essay series & more</p>
+<img src="https://assets.onecompiler.app/43b9vdsvj/43g4nh27m/News_From_New_Haven%20(1)%20Aylin%20Alakbarli.gif" alt=" jan'24"style="border:1px solid black;max-width:100%;"/>
+<p>This issue’s header image by Aylin Alakbarli, Graphic Design MFA ‘25.</p><a href="https://yaleart.org/Jan2024NFNH"><p>READ MORE</p></a>
+<div class="box">
+ </div>
+ </br>
+      <footer>
+    <div class="rectangle">
+      This website exists as an ongoing collaborative experiment in digital publishing and information sharing. Because this website functions as a wiki, all members of the School of Art community — graduate students, faculty, staff, and alums — have the ability to add new content and pages, and to edit most of the site’s existing content.  
+      Content is the property of its various authors. When you contribute to this site, you agree to abide by Yale University academic and network use policy, and to act as a responsible member of our community.
+    </div>
+
+ <div class="footer">
+<p> Yale School of Art
+1156 Chapel Street, POB 208339
+New Haven, Connecticut, 06520-8339 </br> </br>
+&copy; 2025 Yale School of Arts
+</p>
+  </div>
+</footer>
+</body>
+</html>
