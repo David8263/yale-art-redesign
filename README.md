@@ -7,4 +7,4 @@ Tracey Kayembe Kamwimbi: Apply, Courses, Financial Aid and News redesign page
 
 Will Thorner: Exhibitions and Public Events page
 
-David Miller: Home and Publications Page
+David Miller: Home and Publications Page; Edits and Bugfixes to all pages to ensure some uniformity
