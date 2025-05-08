@@ -172,19 +172,20 @@ li a:hover {
 }
 @media (max-width: 700px) {
   .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    width:50%;
-    background-color: #E6D6BB;
+    width:100%;
+    background-color: linear-gradient(to left, #f46b45, #eea849);
+
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  .menu > li {
+    padding-bottom: 1.5em;
+    text-align: center;
   }
 
-  .menu-button-container {
-    display: flex;
-  }
-
-  .menu.show {
-    display: flex;
-  }
   .collapsible {
   background-color: #777;
   color: white;

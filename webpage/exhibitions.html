@@ -81,30 +81,18 @@
       /* all of the css code found below inside the @media are borrowed from Tracey's code */
       @media (max-width: 700px) {
         .menu {
-          display: none;
+          display: flex;
           flex-direction: column;
-          width:50%;
-          background-color: #E6D6BB;
+          width:100%;
+          background-color: linear-gradient(to left, #f46b45, #eea849);
 
           list-style: none;
           margin: 0;
           padding: 0; 
         }
-
-        .menu-button-container {
-          display: flex;
-        }
-
-        .menu.show {
-          display: flex;
-        }
-
-        .menu.show {
-          display: flex;
-        }
-
-        .menu-button-container {
-          display: flex;
+        .menu > li {
+          padding-bottom: 1.5em;
+          text-align: center;
         }
       }
   </style>
